@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+  font-family: "Hanken Grotesk", sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-slate-blue: #6644ed;
+  --light-royal-blue: #2e2be9;
+  --persian: #4e21ca;
+  --ocean-blue: #6031e4;
+  --transparent: #00000000;
+  --light-red: #ff5757;
+  --light-red-trans: #ff575710;
+  --orangey-yellow: #ffb01f;
+  --orangey-yellow-trans: #ffb01f10;
+  --green-teal: #00bd91;
+  --green-teal-trans: #00bd9110;
+  --cobalt-blue: #1125d4;
+  --cobalt-blue-trans: #1125d410;
+  --white: #ffffff;
+  --pale-blue: #ebf1ff;
+  --light-lavender: #c8c7ff;
+  --transparent-light-lavender: #c8c7ffaa;
+  --dark-gray-blue: #303b5a;
+  --dark-gray-blue-trans: #303b5a92;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  width: clamp(650px, 80%, 750px);
+}
+
+.card .results {
+  flex-basis: 50%;
+  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+  padding: 2em 2.5em 3em;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  font-size: 1rem;
+  gap: 1em;
+}
+
+.card .results h1 {
+  color: var(--light-lavender);
+  font-size: 1.5em;
+}
+
+.card .results .result-text {
+  background: linear-gradient(var(--persian), var(--transparent));
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 3em;
+}
+
+.card .results .result-text p {
+  color: var(--transparent-light-lavender);
+  text-align: center;
+  cursor: pointer;
+}
+
+.card .results .result-text p span {
+  font-size: 4em;
+  font-weight: 700;
+  color: var(--white);
+  display: block;
+}
+
+.card .results h2 {
+  color: var(--white);
+  font-size: 2em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.card .results h2:hover {
+  color: var(--light-lavender);
+}
+
+.card .results p.caption {
+  color: var(--light-lavender);
+  line-height: 150%;
+  text-align: center;
+  width: 85%;
+  font-size: 1.1em;
+}
+
+.card .summary {
+  flex-basis: 50%;
+  background-color: var(--white);
+  box-shadow: 4px 4px 30px 10px #9fafdb7b;
+  border-radius: 0 35px 35px 0;
+  padding: 2em 3em 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  gap: 2em;
+}
+
+.card .summary::after {
+  background-color: #fff;
+  content: "";
+  width: 30px;
+  height: 100%;
+  left: -30px;
+  top: 0;
+  position: absolute;
+}
+
+.card .summary > h1 {
+  color: var(--dark-gray-blue);
+  font-size: 1.5em;
+}
+
+.card .summary .sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.card .summary .sections .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.card .summary .sections .item h1 {
+  font-size: 1.2em;
+  text-align: center;
+  display: flex;
+}
+
+.card .summary .sections .item h1 img {
+  margin-right: 0.5em;
+}
+
+.card .summary .sections .item:nth-child(1) {
+  background-color: var(--light-red-trans);
+}
+
+.card .summary .sections .item:nth-child(1) h1 {
+  color: var(--light-red);
+}
+
+.card .summary .sections .item:nth-child(2) {
+  background-color: var(--orangey-yellow-trans);
+}
+
+.card .summary .sections .item:nth-child(2) h1 {
+  color: var(--orangey-yellow);
+}
+
+.card .summary .sections .item:nth-child(3) {
+  background-color: var(--green-teal-trans);
+}
+
+.card .summary .sections .item:nth-child(3) h1 {
+  color: var(--green-teal);
+}
+
+.card .summary .sections .item:nth-child(4) {
+  background-color: var(--cobalt-blue-trans);
+}
+
+.card .summary .sections .item:nth-child(4) h1 {
+  color: var(--cobalt-blue);
+}
+
+.card .summary .sections .item p {
+  color: var(--dark-gray-blue-trans);
+  font-weight: 700;
+}
+
+.card .summary .sections .item p span {
+  color: var(--dark-gray-blue);
+}
+
+.card .summary .btn a {
+  /* forgive me for using such a value, but it's there so that the hover state transitions with it */
+  background: linear-gradient(var(--dark-gray-blue), var(--dark-gray-blue));
+  color: var(--white);
+  text-decoration: none;
+  padding: 1em;
+  display: block;
+  text-align: center;
+  border-radius: 99999px;
+}
+
+.card .summary .btn a:hover {
+  background: linear-gradient(var(--light-slate-blue), var(--light-royal-blue));
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    flex-direction: column;
+    width: clamp(300px, 100%, 450px);
+  }
+
+  .card .summary {
+    padding: 2em 2.5em;
+    font-size: 0.85rem;
+    border-radius: 0 0 35px 35px;
+    flex-basis: unset;
+    justify-content: flex-start;
+  }
+
+  .card .summary::after {
+    width: 100%;
+    height: 30px;
+    top: -30px;
+    left: 0;
+  }
+
+  .card .results {
+    font-size: 0.8rem;
+    padding: 2.5em;
+    flex-basis: unset;
+  }
+
+  .card .results h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .card .results .result-text {
+    padding: 2.5em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    height: 100vh;
+  }
+
+  .card .results {
+    border-radius: 0 0 35px 35px;
+  }
+
+  .card .summary {
+    border-radius: 0;
+    padding: 2em 2.5em;
+    height: 100%;
+    box-shadow: none;
+  }
+}
