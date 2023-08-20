@@ -1,6 +1,6 @@
-![preview](./design/desktop-preview.jpg)
-
 # Frontend Mentor - Results summary component solution 🚀
+
+![preview](./design/desktop-preview.jpg)
 
 ## Welcome 👋
 
