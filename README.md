@@ -8,14 +8,14 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ## Table of contents 📑
 
-- [Overview](#overview-🌟)
-  - [The Challenge](#the-challenge-🧪)
-  - [Screenshots](#screenshot-📷)
-  - [Links](#links-🔗)
-- [My process](#my-process-🏗️)
-  - [Built with](#built-with-🛠️)
-- [Contact](#contact-📧)
-- [Author](#author-👤)
+- [Overview 🌟](#overview-🌟)
+  - [The Challenge 🧪](#the-challenge-🧪)
+  - [Screenshots 📷](#screenshots-📷)
+  - [Links 🔗](#links-🔗)
+- [My process 🏗️](#my-process-🏗️)
+  - [Built with 🛠️](#built-with-🛠️)
+- [Contact 📧](#contact-📧)
+- [Author 👤](#author-👤)
 
 ## Overview 🌟
 
@@ -23,28 +23,22 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 Users should be able to:
 
-- ✅ ~~View the optimal layout for the interface depending on their device's screen size~~
-- ✅ ~~See hover and focus states for all interactive elements on the page~~
+- ✅ View the optimal layout for the interface depending on their device's screen size
+- ✅ See hover and focus states for all interactive elements on the page
 
 ### Screenshots 📷
 
 _My solution (Desktop):_
 ![image of desktop solution](image.png)
 
-_Design_
-![image of desktop design](design/desktop-design.jpg)
-
 _My solution (Mobile)_
 
 ![image of mobile solution](image-3.png)
 
-_Design:_
-
-![image of mobile design](design/mobile-design.jpg)
-
 ### Links 🔗
 
 - Solution repo on github [here](https://github.com/BeanyTheCoder/results-summary-component-main)
+- Solution link on Front End Mentor: [here](https://www.frontendmentor.io/solutions/results-summary-component-html-css-js-sjhuWHxZ_5)
 
 ## My process 🏗️
 
